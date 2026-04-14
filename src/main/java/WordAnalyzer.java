@@ -6,7 +6,7 @@ public class WordAnalyzer {
 
         int count = 0;
         for (String word : words) {
-            if (word.equalsIgnoreCase(targetWord)) {
+            if (word != null && word.equalsIgnoreCase(targetWord)) {
                 count++;
             }
         }
